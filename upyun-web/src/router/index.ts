@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "@/layout";
 import Home from "@/views/Home";
-import About from "@/views/About";
+import File from "@/views/File";
 import Login from "@/views/Login";
 
 const router = createBrowserRouter([
@@ -10,7 +10,6 @@ const router = createBrowserRouter([
         Component: Login,
     },
     { 
-        // path: '/index', //省略 
         Component: Layout,
         children: [
             {
@@ -18,8 +17,8 @@ const router = createBrowserRouter([
                 Component: Home,
             },
             {
-                path: 'about',
-                Component: About,
+                path: 'file',
+                Component: File,
             },
         ]
     },

@@ -3,7 +3,7 @@ import { Map, PieChart } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 import { NavUser } from "@/components/nav-user";
-import { Logo } from "@/components/Logo";
+import { NavLogo } from "@/components/nav-logo";
 import {
   Sidebar,
   SidebarContent,
@@ -27,7 +27,7 @@ const data = {
     },
     {
       title: "文件管理",
-      url: "/about",
+      url: "/file",
       icon: Map,
     },
   ],
@@ -37,7 +37,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <Logo />
+        <NavLogo />
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />

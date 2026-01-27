@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/sidebar";
 import { NavLink } from "react-router";
 
-export function Logo() {
+export function NavLogo() {
   return (
     <SidebarMenu>
       <SidebarMenuItem>
